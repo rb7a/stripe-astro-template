@@ -35,7 +35,7 @@ export const getPriceBy = async (id: string) => {
 }
 
 export const getCheckoutSession = async (cart: Stripe.Checkout.SessionCreateParams.LineItem[]) => {
-  const response = await fetch('https://aplantstore.netlify.app/.netlify/functions/checkout', {
+  const response = await fetch('/.netlify/functions/checkout', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
