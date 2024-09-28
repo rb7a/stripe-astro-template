@@ -2,7 +2,12 @@
 //  STRIPE_SECRET_KEY: STRIPE_SECRET_KEY,
 //} = import.meta.env
 
-export const STRIPE_SECRET_KEY = import.meta.env.STRIPE_SECRET_KEY
+import dotenv from 'dotenv';
+dotenv.config();
+
+export const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY
+
+//export const STRIPE_SECRET_KEY = import.meta.env.STRIPE_SECRET_KEY
 
 export const CURRENCY = 'usd'
 export const INSTAGRAM_URL = 'https://www.instagram.com'
